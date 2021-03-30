@@ -17,7 +17,7 @@ no aqruivo ContextBase.cs que se encontra na pasta raiz do projeto 4-Infra: Infr
 
 <b>Observações: </b> O Default Project do Package Manager(Gerenciador de Pacotes) de tem que estar no 4-Infra\Infrastructure.
 
-- Pronto, agora é só testar.
+- Coloque o Web_Ecommerce Startup Project e pronto, agora é só testar.
 
 <b>Funções implementadas:</b>
 
