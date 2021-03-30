@@ -36,5 +36,5 @@ no aqruivo ContextBase.cs que se encontra na pasta raiz do projeto 4-Infra: Infr
 
 
 
-<b>Front End (ASP NET MVC .NET CORE 3.1)</b>
-<b>Back End (.NET CORE 3.1)</b>
+<b>- Front End (ASP NET MVC .NET CORE 3.1)</b>
+<b>- Back End (.NET CORE 3.1)</b>
