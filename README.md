@@ -6,8 +6,7 @@ No repositório acima encontra-se um projeto de e-commercerce para atender uma d
 
 <b>Como executar:</b>
 
-- Abra o projeto da api que se encontra na pasta: BackEnd\ApiContaVirtual.
-
+- Execute a solution para realizar a união de todos os projetos de forma automática.
 - Va até o arquivo appsettings.json que se encontra na pasta raiz do projeto 1-Presentation: Web_Ecommerce.
 - Va até o arquivo ContextBase.cs que se encontra na pasta raiz do projeto 4-Infra: Infrastructure - Configuration.
 
