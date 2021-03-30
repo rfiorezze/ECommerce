@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Entities.Entities.Produto>
+
+@{
+    ViewData["Title"] = "ListarProdutosCarrinhoUsuario";
+    decimal ValorCompra = 0;
+}
+
+<h1>Lista de Produtos do Carrinho</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>Imagem</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescricaoPromocao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @{
+                    if (!string.IsNullOrWhiteSpace(item.Url))
+                    {
+                        <img width="80" height="80" src=@item.Url />
+                    }
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoPromocao)
+            </td>
+            <td>
+                @Html.ActionLink("Remover", "RemoverCarrinho", "Produtos", new { id = item.IdProdutoCarrinho }, new { @class = "btn btn-danger " })
+            </td>
+        </tr>
+            ValorCompra += item.ValorTotal;
+        }
+    </tbody>
+</table>
+<div>    
+    <a><strong>Valor da Compra: </strong> @ValorCompra</a>
+</div>

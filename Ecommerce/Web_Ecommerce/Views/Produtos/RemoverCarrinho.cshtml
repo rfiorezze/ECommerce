@@ -1,0 +1,15 @@
+﻿@model Entities.Entities.Produto
+
+@{
+    ViewData["Title"] = "RemoverCarrinho";
+}
+
+<h1>Remover Produto do Carrinho</h1>
+
+<h3>Deseja realmente remover o produto ? </h3>
+    
+    <form asp-action="RemoverCarrinho">
+        <input type="submit" value="Remover" class="btn btn-danger" /> |
+        <a asp-action="ListarProdutosCarrinhoUsuario">Voltar</a>
+    </form>
+</div>
